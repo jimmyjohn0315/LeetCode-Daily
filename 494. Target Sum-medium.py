@@ -15,9 +15,4 @@ class Solution:
                 dp[j] += dp[j - nums[i]]  #累加
         return dp[x]
             
-            
-# 类似01背包问题：每一个数字有2种选择，+或者-。
-# 如果所有数字总和为sum，加法数字总和为x，那么减法数字总和必定为sum - x
-# target = x - (sum - x)，得出 x=(target + sum) / 2
-# 问题转化为装满背包容量为x有几种装法
-# 装满背包有几种方法的情况下，递推公式一般为：dp[j] += dp[j - nums[i]]
+           
