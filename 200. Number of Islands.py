@@ -1,4 +1,5 @@
-def numIslands(self, grid: List[List[str]]) -> int:
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
         m, n = len(grid), len(grid[0])
         res = 0
         for r in range(m):
@@ -18,3 +19,4 @@ def numIslands(self, grid: List[List[str]]) -> int:
             y = c + j
             if 0 <= x < m and 0 <= y < n and grid[x][y] == '1':
                 self.dfs(grid, x, y)
+        
